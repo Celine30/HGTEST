@@ -1,0 +1,122 @@
+.container-fluid {
+  max-width: 1440px;
+  border: 2px red solid;
+}
+
+nav.navbar {
+  padding: 0;
+}
+nav.navbar img {
+  width: 90%;
+  background: #ea4235;
+  padding: 10%;
+}
+nav.navbar a {
+  padding: 0;
+}
+nav.navbar li {
+  text-transform: uppercase;
+}
+
+article#hero {
+  position: relative;
+}
+article#hero .title {
+  position: absolute;
+  z-index: 1;
+  margin-left: 10%;
+  margin-top: 13%;
+}
+article#hero .title h1 {
+  color: white;
+}
+article#hero .title button {
+  color: white;
+  background: #ea4235;
+  border-radius: 25px;
+  padding: 5px 30px 5px 30px;
+}
+article#hero #carousel img {
+  width: 100%;
+}
+
+article#about {
+  margin-top: 30px;
+}
+article#about p, article#about div {
+  padding: 0;
+}
+article#about div {
+  margin-left: 0 !important;
+}
+article#about div img {
+  padding: 0;
+}
+article#about div div.text-about {
+  background: #ea4235;
+  color: white;
+  padding: 30px;
+}
+article#about div div.text-about button {
+  color: #ea4235;
+  background: white;
+  border-radius: 25px;
+  padding: 5px 30px 5px 30px;
+}
+
+article#services {
+  margin-top: 30px;
+}
+article#services .service-unit i {
+  font-size: 10em;
+}
+article#services h3 {
+  margin-top: 20px;
+}
+
+article#works {
+  margin-top: 30px;
+}
+article#works img {
+  height: 100%;
+}
+article#works .work_unit {
+  position: relative;
+  padding: 0;
+}
+article#works .work_unit .legend {
+  position: absolute;
+  left: 29px;
+  top: 28px;
+  color: white;
+}
+article#works p.works-fin {
+  margin: 10px;
+  color: #ea4235;
+}
+
+article#contact {
+  margin-top: 30px;
+}
+article#contact .container_contact {
+  background: #323232;
+  color: white;
+}
+article#contact .offices-tabs {
+  border-bottom: white 1px solid;
+  padding-left: 0;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+article#contact input {
+  background: #323232;
+  border: white;
+}
+
+footer {
+  background: #ea4235;
+  font-size: 0.9em;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
