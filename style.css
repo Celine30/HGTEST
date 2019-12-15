@@ -1,8 +1,26 @@
-.container-fluid {
-  max-width: 1440px;
-  border: 2px red solid;
+/*@font-face {
+  font-family: 'Montserrat';
+  src: url('../Fonts/Montserrat/Montserrat-Black.ttf') format('truetype'),
+  url('../Fonts/Montserrat/Montserrat-Bold.ttf') format('truetype'),
+  url('../Fonts/Montserrat/Montserrat-Bold.ttf') format('truetype'),
+  url('../Fonts/Montserrat/Montserrat-BoldItalic.ttf') format('truetype'),
+  url('../Fonts/Montserrat/Montserrat-Italic.ttf') format('truetype'),
+  url('../Fonts/Montserrat/Montserrat-Light.ttf') format('truetype'),
+  url('../Fonts/Montserrat/Montserrat-Lightitalic.ttf') format('truetype'),
+  url('../Fonts/Montserrat/Montserrat-Medium.ttf') format('truetype'),
+  url('../Fonts/Montserrat/Montserrat-Mediumitalic.ttf') format('truetype'),
+  url('../Fonts/Montserrat/Montserrat-Regular.ttf') format('truetype'),
+  url('../Fonts/Montserrat/Montserrat-Thin.ttf') format('truetype'),
+  url('../Fonts/Montserrat/Montserrat-Thinitalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
+
+body{
+   font-family: "Montserrat", sans-serif;
+ }
+*/
 nav.navbar {
   padding: 0;
 }
@@ -17,6 +35,9 @@ nav.navbar a {
 nav.navbar li {
   text-transform: uppercase;
 }
+nav.navbar i {
+  margin-right: 10px;
+}
 
 article#hero {
   position: relative;
@@ -24,11 +45,11 @@ article#hero {
 article#hero .title {
   position: absolute;
   z-index: 1;
-  margin-left: 10%;
-  margin-top: 13%;
+  top: 33%;
 }
 article#hero .title h1 {
   color: white;
+  font-size: 2em;
 }
 article#hero .title button {
   color: white;
@@ -40,17 +61,38 @@ article#hero #carousel img {
   width: 100%;
 }
 
-article#about {
-  margin-top: 30px;
+@media screen and (max-width: 768px) {
+  article#hero {
+    position: relative;
+  }
+  article#hero .title {
+    position: relative;
+    margin-top: 0;
+  }
+  article#hero .title h1 {
+    color: black;
+    text-align: center;
+  }
+  article#hero .title button {
+    color: white;
+    background: #ea4235;
+    border-radius: 25px;
+    padding: 5px 30px 5px 30px;
+    width: 33%;
+    text-align: center;
+    margin-left: 33%;
+  }
 }
-article#about p, article#about div {
-  padding: 0;
+article#about {
+  margin-top: 50px;
 }
 article#about div {
-  margin-left: 0 !important;
+  padding: 0;
+  margin-left: 0;
 }
 article#about div img {
   padding: 0;
+  width: 100%;
 }
 article#about div div.text-about {
   background: #ea4235;
@@ -63,22 +105,25 @@ article#about div div.text-about button {
   border-radius: 25px;
   padding: 5px 30px 5px 30px;
 }
+article#about div div.text-about button i {
+  font-size: 0.8em;
+}
 
 article#services {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 article#services .service-unit i {
   font-size: 10em;
 }
 article#services h3 {
-  margin-top: 20px;
+  margin-bottom: 90px;
+}
+article#services h4 {
+  margin-top: 30px;
 }
 
 article#works {
-  margin-top: 30px;
-}
-article#works img {
-  height: 100%;
+  margin-top: 50px;
 }
 article#works .work_unit {
   position: relative;
@@ -96,27 +141,66 @@ article#works p.works-fin {
 }
 
 article#contact {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 article#contact .container_contact {
+  margin-left: 0;
+  margin-right: 0;
   background: #323232;
   color: white;
+  padding: 20px;
 }
-article#contact .offices-tabs {
+article#contact .container_contact .address {
+  margin-top: 20px;
+}
+article#contact .container_contact .address ul#myTab li a {
+  color: white;
+}
+article#contact .container_contact .address ul#myTab li a h4 {
+  text-transform: uppercase;
+}
+article#contact .container_contact .address i {
+  margin-right: 10px;
+}
+article#contact .container_contact div.form form div.offices-tabs {
   border-bottom: white 1px solid;
   padding-left: 0;
   margin-left: 20px;
   margin-bottom: 20px;
 }
-article#contact input {
+article#contact .container_contact div.form form div.offices-tabs input {
   background: #323232;
   border: white;
+  color: white;
+  width: 80%;
+  margin-left: 10px;
+}
+article#contact .container_contact div.form form button {
+  color: white;
+  border: white 2px solid;
+  border-radius: 25px;
 }
 
-footer {
+footer .footer {
+  margin-left: 0;
+  margin-right: 0;
   background: #ea4235;
-  font-size: 0.9em;
+  font-size: 0.7em;
   color: white;
+  padding-top: 10px;
+}
+
+.nav-tabs {
+  border-bottom: none;
+}
+.nav-tabs .nav-link.active {
+  color: white;
+  background-color: #323232;
+  border-color: #323232;
+  border-bottom: none;
+}
+.nav-tabs .nav-link.active h4 {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
