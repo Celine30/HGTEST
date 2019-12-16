@@ -21,22 +21,30 @@ body{
    font-family: "Montserrat", sans-serif;
  }
 */
-nav.navbar {
+header nav.navbar {
   padding: 0;
 }
-nav.navbar img {
+header nav.navbar img {
   width: 90%;
   background: #ea4235;
   padding: 10%;
 }
-nav.navbar a {
+header nav.navbar a {
   padding: 0;
 }
-nav.navbar li {
+header nav.navbar li {
   text-transform: uppercase;
 }
-nav.navbar i {
+header nav.navbar i {
   margin-right: 10px;
+}
+
+header nav.navbar:hover #menu ul a {
+  color: #ea4235;
+}
+
+header nav.navbar:hover {
+  color: #ea4235;
 }
 
 article#hero {
@@ -56,6 +64,10 @@ article#hero .title button {
   background: #ea4235;
   border-radius: 25px;
   padding: 5px 30px 5px 30px;
+}
+article#hero .title button:hover {
+  color: #ea4235;
+  background: white;
 }
 article#hero #carousel img {
   width: 100%;
@@ -108,6 +120,11 @@ article#about div div.text-about button {
 article#about div div.text-about button i {
   font-size: 0.8em;
 }
+article#about div div.text-about button:hover {
+  color: white;
+  background: #ebebeb;
+  border: 2px #ea4235 solid;
+}
 
 article#services {
   margin-top: 50px;
@@ -124,37 +141,89 @@ article#services h4 {
 
 article#works {
   margin-top: 50px;
+  padding-left: 15px;
 }
-article#works div .work_unit {
+article#works div div.work_unit {
   position: relative;
   padding: 0;
 }
-article#works div .work_unit .legend {
+article#works div div.work_unit .legend {
   position: absolute;
   left: 29px;
   top: 28px;
   color: white;
   z-index: 3;
 }
-article#works div .work_unit img {
+article#works div div.work_unit img {
   position: relative;
   width: 277.5px;
   height: 277.5px;
   z-index: 0;
 }
-article#works div .work_unit .background {
+article#works div div.work_unit .background {
+  display: flex;
   position: absolute;
   top: 0;
   width: 277.5px;
   height: 277.5px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
   z-index: 2;
+}
+article#works div div.work_unit .background .button-works {
+  display: none;
+  margin: auto;
+  color: white;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 25px;
+  padding: 5px 30px 5px 30px;
+  border: white 1px solid;
+}
+article#works div div.work_unit .background:hover .button-works {
+  display: block;
 }
 article#works p.works-fin {
   margin: 10px;
   color: #ea4235;
 }
+article#works div#modal-works .modal-dialog .modal-content {
+  padding: 30px 30px 70px 30px;
+}
+article#works div#modal-works .modal-dialog .modal-content h4 {
+  padding-left: 0;
+}
+article#works div#modal-works .modal-dialog .modal-content p {
+  font-size: 0.7em;
+  padding-left: 0;
+}
+article#works div#modal-works .modal-dialog .modal-content img {
+  width: 100%;
+}
+article#works div#modal-works .modal-dialog .modal-content .btn-lorem {
+  color: #ea4235;
+  background: white;
+  border-radius: 25px;
+  padding: 5px 30px 5px 30px;
+  border: #ea4235 1px solid;
+}
+article#works div#modal-works .modal-dialog .modal-content .btn-cuncat {
+  color: white;
+  background: #ea4235;
+  border-radius: 25px;
+  padding: 5px 30px 5px 30px;
+}
 
+@media screen and (max-width: 1200px) {
+  article#works a div div.work_unit img, article#works a div div.work_unit .background {
+    width: 232.5px;
+    height: 232.5px;
+  }
+}
+@media screen and (max-width: 990px) {
+  article#works a div div.work_unit img, article#works a div div.work_unit .background {
+    width: 277.5px;
+    width: 277.5px;
+  }
+}
 article#contact {
   margin-top: 50px;
 }
@@ -201,6 +270,9 @@ article#contact .container_contact div.form form button {
   border: white 2px solid;
   border-radius: 25px;
 }
+article#contact .container_contact div.form form button:hover {
+  color: #ea4235;
+}
 
 footer .footer {
   margin-left: 0;
@@ -209,6 +281,9 @@ footer .footer {
   font-size: 0.6em;
   color: white;
   padding-top: 10px;
+}
+footer .footer a:hover {
+  text-decoration: underline;
 }
 
 .nav-pills {
@@ -222,12 +297,6 @@ footer .footer {
 }
 .nav-pills .nav-link.active h4 {
   text-decoration: underline;
-}
-
-.modal-dialog {
-  width: 500px;
-  height: 100%;
-  margin-top: 20%;
 }
 
 /*# sourceMappingURL=style.css.map */
