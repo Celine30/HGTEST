@@ -125,15 +125,30 @@ article#services h4 {
 article#works {
   margin-top: 50px;
 }
-article#works .work_unit {
+article#works div .work_unit {
   position: relative;
   padding: 0;
 }
-article#works .work_unit .legend {
+article#works div .work_unit .legend {
   position: absolute;
   left: 29px;
   top: 28px;
   color: white;
+  z-index: 3;
+}
+article#works div .work_unit img {
+  position: relative;
+  width: 277.5px;
+  height: 277.5px;
+  z-index: 0;
+}
+article#works div .work_unit .background {
+  position: absolute;
+  top: 0;
+  width: 277.5px;
+  height: 277.5px;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+  z-index: 2;
 }
 article#works p.works-fin {
   margin: 10px;
@@ -159,8 +174,14 @@ article#contact .container_contact .address ul#myTab li a {
 article#contact .container_contact .address ul#myTab li a h4 {
   text-transform: uppercase;
 }
+article#contact .container_contact .address ul#myTab li a:hover {
+  border: none;
+}
 article#contact .container_contact .address i {
   margin-right: 10px;
+}
+article#contact .container_contact div.form {
+  margin-top: 20px;
 }
 article#contact .container_contact div.form form div.offices-tabs {
   border-bottom: white 1px solid;
@@ -185,22 +206,28 @@ footer .footer {
   margin-left: 0;
   margin-right: 0;
   background: #ea4235;
-  font-size: 0.7em;
+  font-size: 0.6em;
   color: white;
   padding-top: 10px;
 }
 
-.nav-tabs {
+.nav-pills {
   border-bottom: none;
 }
-.nav-tabs .nav-link.active {
+.nav-pills .nav-link.active {
   color: white;
   background-color: #323232;
   border-color: #323232;
   border-bottom: none;
 }
-.nav-tabs .nav-link.active h4 {
+.nav-pills .nav-link.active h4 {
   text-decoration: underline;
+}
+
+.modal-dialog {
+  width: 500px;
+  height: 100%;
+  margin-top: 20%;
 }
 
 /*# sourceMappingURL=style.css.map */
