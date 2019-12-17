@@ -46,6 +46,7 @@ header nav.navbar:hover {
   }
 }
 article#hero {
+  margin-top: 60px;
   position: relative;
 }
 article#hero .title {
@@ -88,9 +89,8 @@ article#hero #carousel img {
     background: #ea4235;
     border-radius: 25px;
     padding: 5px 30px 5px 30px;
-    width: 33%;
-    text-align: center;
-    margin-left: 33%;
+    display: flex;
+    margin: auto;
   }
 }
 article#about {
@@ -121,7 +121,6 @@ article#about div div.text-about button i {
 article#about div div.text-about button:hover {
   color: white;
   background: #ebebeb;
-  border: 2px #ea4235 solid;
 }
 
 article#services {
@@ -211,13 +210,13 @@ article#works div#modal-works .modal-dialog .modal-content .btn-cuncat {
 }
 
 @media screen and (max-width: 1200px) {
-  article#works a div div.work_unit img, article#works a div div.work_unit .background {
+  article#works div div.work_unit img, article#works div div.work_unit .background {
     width: 232.5px;
     height: 232.5px;
   }
 }
 @media screen and (max-width: 990px) {
-  article#works a div div.work_unit img, article#works a div div.work_unit .background {
+  article#works div div.work_unit img, article#works div div.work_unit .background {
     width: 277.5px;
     width: 277.5px;
   }
@@ -243,6 +242,9 @@ article#contact .container_contact .address ul#myTab li a h4 {
 }
 article#contact .container_contact .address ul#myTab li a:hover {
   border: none;
+}
+article#contact .container_contact .address ul#myTab li:first-child a {
+  padding-left: 0;
 }
 article#contact .container_contact .address i {
   margin-right: 10px;
@@ -272,15 +274,13 @@ article#contact .container_contact div.form form button:hover {
   color: #ea4235;
 }
 
-footer .footer {
-  margin-left: 0;
-  margin-right: 0;
+footer.footer div {
   background: #ea4235;
-  font-size: 0.6em;
+  font-size: 0.8em;
   color: white;
   padding-top: 10px;
 }
-footer .footer a:hover {
+footer.footer div div a:hover {
   text-decoration: underline;
 }
 
