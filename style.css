@@ -1,38 +1,23 @@
-/*@font-face {
-  font-family: 'Montserrat';
-  src: url('../Fonts/Montserrat/Montserrat-Black.ttf') format('truetype'),
-  url('../Fonts/Montserrat/Montserrat-Bold.ttf') format('truetype'),
-  url('../Fonts/Montserrat/Montserrat-Bold.ttf') format('truetype'),
-  url('../Fonts/Montserrat/Montserrat-BoldItalic.ttf') format('truetype'),
-  url('../Fonts/Montserrat/Montserrat-Italic.ttf') format('truetype'),
-  url('../Fonts/Montserrat/Montserrat-Light.ttf') format('truetype'),
-  url('../Fonts/Montserrat/Montserrat-Lightitalic.ttf') format('truetype'),
-  url('../Fonts/Montserrat/Montserrat-Medium.ttf') format('truetype'),
-  url('../Fonts/Montserrat/Montserrat-Mediumitalic.ttf') format('truetype'),
-  url('../Fonts/Montserrat/Montserrat-Regular.ttf') format('truetype'),
-  url('../Fonts/Montserrat/Montserrat-Thin.ttf') format('truetype'),
-  url('../Fonts/Montserrat/Montserrat-Thinitalic.ttf') format('truetype');
+@font-face {
+  font-family: "Montserrat";
+  src: url("../Fonts/Montserrat/Montserrat-Black.ttf") format("truetype"), url("../Fonts/Montserrat/Montserrat-Bold.ttf") format("truetype"), url("../Fonts/Montserrat/Montserrat-Bold.ttf") format("truetype"), url("../Fonts/Montserrat/Montserrat-BoldItalic.ttf") format("truetype"), url("../Fonts/Montserrat/Montserrat-Italic.ttf") format("truetype"), url("../Fonts/Montserrat/Montserrat-Light.ttf") format("truetype"), url("../Fonts/Montserrat/Montserrat-Lightitalic.ttf") format("truetype"), url("../Fonts/Montserrat/Montserrat-Medium.ttf") format("truetype"), url("../Fonts/Montserrat/Montserrat-Mediumitalic.ttf") format("truetype"), url("../Fonts/Montserrat/Montserrat-Regular.ttf") format("truetype"), url("../Fonts/Montserrat/Montserrat-Thin.ttf") format("truetype"), url("../Fonts/Montserrat/Montserrat-Thinitalic.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+}
 
-
-body{
-   font-family: "Montserrat", sans-serif;
- }
-*/
-header nav.navbar {
+header nav.navbar a {
   padding: 0;
 }
-header nav.navbar img {
+header nav.navbar a img {
   width: 90%;
   background: #ea4235;
   padding: 10%;
 }
-header nav.navbar a {
-  padding: 0;
-}
-header nav.navbar li {
+header nav.navbar div#menu ul li {
   text-transform: uppercase;
 }
 header nav.navbar i {
@@ -47,6 +32,19 @@ header nav.navbar:hover {
   color: #ea4235;
 }
 
+@media screen and (max-width: 990px) {
+  header nav.navbar:hover #menu ul a {
+    color: #333;
+  }
+
+  header nav.navbar:hover {
+    color: #333333;
+  }
+
+  header nav.navbar #menu ul a:hover {
+    text-decoration: underline;
+  }
+}
 article#hero {
   position: relative;
 }
@@ -297,6 +295,10 @@ footer .footer a:hover {
 }
 .nav-pills .nav-link.active h4 {
   text-decoration: underline;
+}
+
+.bg-light {
+  background-color: white !important;
 }
 
 /*# sourceMappingURL=style.css.map */
