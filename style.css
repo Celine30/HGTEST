@@ -119,6 +119,7 @@ header nav.navbar {
 }
 header nav.navbar a {
   padding: 0;
+  display: block;
 }
 header nav.navbar a img {
   width: 90%;
